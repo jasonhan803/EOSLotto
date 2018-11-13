@@ -1,0 +1,305 @@
+<html>
+<head><title> Badla Alpha </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="icon" 
+      type="image/ico" 
+      href="./favicon.ico">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'><style>
+
+td{
+font-size:0.9em !important;
+}
+th{
+	font-size: 1em !important;
+}
+</style>
+</head>
+<body style="overflow: hidden; font-family: Roboto;">
+
+
+
+<!-- Modal -->
+<div class="modal fade" style="font-family: Economica; margin-top: 20%" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="titleText"><i class="far fa-eye"></i> ATTEMPTING TO LOCATE METAMASK </h5>
+      </div>
+      <div class="modal-body">
+       <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 5%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" id="progressBar"></div>
+</div>
+</div> 
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+  	  <img src="./Logo.png" height="50" class="d-inline-block align-top" alt="Badla">
+
+  </a>
+ 
+</nav>
+
+  <div class="row">
+
+    <div class="col-md" style="padding-right: 0" >
+
+	<div class="" style="padding-bottom: 0; margin-bottom: 0; padding: 25px;margin-right: 0px; font-family: Economica">
+<center>	<br/>
+	<br/>
+
+	<div class="row">
+<div class="col-md">
+	<br/>
+	<img src="./draft.png" style="height: 130px" />
+	<br/><br/>
+	<h4> CREATE A PROPOSAL</h4>
+	<br/>
+</div>
+<div class="col-md">
+	<br/>
+	<img src="./sign.png" style="height: 130px" />
+	<br/><br/>
+	<h4> SIGN IT</h4>
+	<br/>
+</div>
+<div class="col-md">
+	<br/>
+	<img src="./enjoy.png" style="height: 130px" />
+	<br/><br/>
+	<h4> ENJOY TRADING</h4>
+
+	
+
+</div>
+</div>
+</center>
+	
+</div>
+
+
+
+<div class="" style="padding: 25px; padding-bottom:0;margin-right: 0px;margin-bottom: 0; font-size: 0.02em !important">
+
+<center>
+<br/>
+	<div class="btn-group btn-group-toggle" date-toggle="buttons">
+<label class="btn btn-dark active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fas fa-money-bill"> </i> &nbsp;<b> SELL & BUYBACK ZRX </b>
+  </label>
+
+<label class="btn btn-dark">
+    <input type="radio" name="options" id="option1" autocomplete="off" >  <i class="fas fa-shopping-cart"></i>&nbsp; <b> BUY & SELLBACK WETH </b>
+  </label>
+
+
+
+</div><br/>
+</center>
+<br/>
+<br/>
+<br/>
+
+<br/>
+	<div class="row">
+
+<div class="col">
+
+     <div class="input-group">
+
+     	<div class="input-group-prepend">
+    <span class="input-group-text" ><i class="fas fa-shopping-cart"></i>&nbsp;SELL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+
+    <input type="number" class="form-control" id="sell_price" value=0.02 placeholder="0.02">
+    <div class="input-group-append">
+    <span class="input-group-text" >&nbsp;ZRX&nbsp;&nbsp;</span>
+  </div>
+  </div>
+<br/>
+<br/>
+<br/>
+     <div class="input-group">
+
+     	 <div class="input-group-append" >
+    <span class="input-group-text"  >  <i class="fas fa-money-bill"></i>&nbsp;PRICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+
+    <input type="number" class="form-control" id="buy_price" value="0.02" placeholder="0.02">
+    <div class="input-group-append">
+    <span class="input-group-text" >WETH</span>
+  </div>
+  </div>
+
+</div>
+<br/>
+
+
+
+<div class="col">
+   <div class="input-group">
+
+     	 <div class="input-group-append">
+    <span class="input-group-text">  <i class="fas fa-undo"></i>&nbsp;BUYBACK</span>
+  </div>
+
+    <input type="number" class="form-control" id="buyback_price" value="0.03"  placeholder="0.03">
+    <div class="input-group-append">
+    <span class="input-group-text" >WETH</span>
+  </div>
+  </div>
+<br/>
+<br/>
+<br/>
+     <div class="input-group">
+
+     	 <div class="input-group-append">
+    <span class="input-group-text" >  <i class="fas fa-calendar-alt"></i>&nbsp;PERIOD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+
+    <input  type="number" class="form-control" id="period"  placeholder="30" disabled>
+    <div class="input-group-append">
+    <span class="input-group-text" >DAYS&nbsp;</span>
+  </div>
+  </div>
+
+</div>
+
+</div>
+ <br/>
+<br/><br/><br/>
+
+<center>
+   <button id="sign"  class="btn btn-dark"><i class="fas fa-file-signature"></i> SIGN PROPOSAL</button> </center>
+  <br/><br/><br/><br/>
+
+
+</div>
+     
+
+    
+    </div>
+
+
+     <div class="col-md" style="margin-left: 0;margin-right: 0; padding-left: 0; ">
+<!--
+     	<div  style="max-height: 45% !important; margin-bottom: 0; margin-top: 0; padding-top: 0; overflow: auto; ">
+
+<table class="table table-striped">
+  <thead class="thead-dark" >
+    <tr>
+      <th scope="col"> <i class="fas fa-book"></i> &nbsp;MY ORDER BOOK</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1 ZRX </td>
+  
+    </tr>
+    <tr>
+      <td>0.2 ZRX </td>
+ 
+
+    </tr>
+    <tr>
+       <td>0.3 ZRX </td>
+
+
+    </tr>
+        <tr>
+       <td>0.3 ZRX </td>
+
+
+    </tr>
+        <tr>
+       <td>0.3 ZRX </td>
+     
+
+    </tr>
+      <tr>
+       <td>0.3 ZRX </td>
+      
+    </tr>
+      <tr>
+       <td>0.3 ZRX </td>
+      
+    </tr>
+    
+      <tr>
+       <td>0.3 ZRX </td>
+   
+
+    </tr>      <tr>
+       <td>0.3 ZRX </td>
+      
+    </tr>      <tr>
+       <td>0.3 ZRX </td>
+      
+
+    </tr>      <tr>
+       <td>0.3 ZRX </td>
+      
+    </tr>      <tr>
+       <td>0.3 ZRX </td>
+      
+
+    </tr>
+
+  </tbody>
+</table>
+</div> -->
+
+<div  style="max-height: 50% !important; margin-bottom: 0; margin-top: 0; padding-top: 0; overflow: auto; ">
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"> <i class="fas fa-shopping-cart"></i> SELLING</th>
+      <th scope="col"> <i class="fas fa-money-bill"></i> PRICE</th>
+      <th scope="col"> <i class="fas fa-undo"></i> BUYBACK </th>
+      <th scope="col"> <i class="fas fa-calendar-alt"></i> PERIOD</th>
+      <th scope="col"> <i class="fas fa-user-friends"></i> </th>
+    </tr>
+  </thead>
+  <tbody id="orders">
+  
+  </tbody>
+</table>
+</div>	
+
+
+
+     </div>
+   
+
+
+   
+
+
+   
+
+  </div>
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+
+        <script src="bundle.js"></script>
+
+
+ 
+</body>
+</html>
